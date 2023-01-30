@@ -38,19 +38,19 @@ const App = () => {
                     type="text"
                     value={todo.description}
                     onChange={(event) => updateTodo(index, event.target.value, todo.dueTime)}
-                    className='p-3 border-orange border-2 rounded-lg mx-5'
+                    className='p-3 border-orange border-2 my-3 rounded-lg mx-5'
                   />
                   <input
                     type="datetime-local"
                     value={todo.dueTime}
-                    onChange={(event) => updateTodo(index, todo.description, event.target.value)}  className='border-navy border-2 rounded-md py-2'
+                    onChange={(event) => updateTodo(index, todo.description, event.target.value)}  className='border-navy my-3 border-2 rounded-md py-2'
                   />
-                  <button onClick={() => toggleEditing(index)} className='bg-navy text-gray p-2 mx-5 rounded-md'>Save</button>
+                  <button onClick={() => toggleEditing(index)} className='bg-navy text-gray p-2 my-3 mx-5 rounded-md'>Save</button>
                 </div>
               ) : (
                 <div className='flex justify-between my-3 '>
-                  <button>
-                  <span onClick={() => toggleEditing(index)} className='border-b-2 py-2 border-orange  mx-5 px-5 pt-3'>{todo.description}</span>
+                  <button className=''>
+                  <span onClick={() => toggleEditing(index)} className='border-b-2 py-2 my-3 border-orange  mx-5 px-5 pt-3'>{todo.description}</span>
                   </button>
                   
                   <span className='border-navy border-b-2 p-2 tracking-wider'>Due Date&Time: {todo.dueTime}</span>

@@ -16,6 +16,7 @@ npm install
 
 ```bash
 npm run dev
+```
 
 ### Deployed site:
 
